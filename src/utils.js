@@ -1,5 +1,5 @@
 const jwt = require('jsonwebtoken')
-const APP_SECRET = 'hackernews-project'
+const APP_SECRET = process.env.APP_SECRET
 
 function getUserId(context) {
   const Authorization = context.request.get('Authorization')
